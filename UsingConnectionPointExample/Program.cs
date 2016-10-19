@@ -222,6 +222,8 @@ namespace UsingConnectionPointExample
 
             //after all we use cookie for unsubscribe
             connectionPoint.Unadvise(cookie);
+            
+            //System.Runtime.InteropServices.Marshal.ReleaseComObject(wordApp); // forcing a quick release of COM object
         }
 
     }

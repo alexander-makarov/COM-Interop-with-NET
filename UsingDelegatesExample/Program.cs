@@ -23,6 +23,8 @@ namespace UsingDelegatesExample
 
             // unsubscribe:
             wordApp.DocumentOpen -= wordApp_DocumentOpen;
+            
+            //System.Runtime.InteropServices.Marshal.ReleaseComObject(wordApp); // forcing a quick release of COM object
         }
 
         /// <summary>
